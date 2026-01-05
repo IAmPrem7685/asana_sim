@@ -1,0 +1,13 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Database files (so you don't commit your 5000 mock users)
+output/*.sqlite
+*.db
+
+# Environment variables (if you use them later)
+.env
