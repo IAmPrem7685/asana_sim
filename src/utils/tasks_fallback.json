@@ -1,0 +1,64 @@
+{
+  "Auth": [
+    "[Auth] - Implement - SCIM provisioning for Okta enterprise integration",
+    "[Auth] - Fix - Race condition in JWT refresh token rotation",
+    "[Auth] - Add - Granular RBAC permissions for \"Guest\" user roles",
+    "[Auth] - Implement - Passwordless magic link flow using SendGrid",
+    "[Auth] - Refactor - Session storage from local state to Redis-backed store",
+    "[Auth] - Fix - Open redirect vulnerability in post-login callback URL",
+    "[Auth] - Implement - MFA enforcement policy for Admin-level accounts",
+    "[Auth] - Add - Audit logging for failed login attempts and IP tracking"
+  ],
+  "Billing": [
+    "[Billing] - Implement - Usage-based metering for API call overages",
+    "[Billing] - Fix - Tax calculation mismatch for EU-based VAT customers",
+    "[Billing] - Add - Grace period logic for failed subscription renewals",
+    "[Billing] - Implement - Proration logic for mid-cycle seat upgrades",
+    "[Billing] - Fix - Stripe webhook idempotent processing for duplicate events",
+    "[Billing] - Add - Dunning email sequence for expiring credit cards",
+    "[Billing] - Implement - \"Free Trial to Pro\" conversion tracking in Segment",
+    "[Billing] - Refactor - Checkout flow to support Apple Pay and Google Pay"
+  ],
+  "Engineering": [
+    "[API] - Implement - Rate limiting headers (X-RateLimit) via Nginx",
+    "[API] - Fix - N+1 query issue on the /v1/projects listing endpoint",
+    "[API] - Add - ETag support for client-side caching of static resources",
+    "[API] - Implement - GraphQL complexity analysis to prevent nested query DOS",
+    "[API] - Refactor - Public API documentation using OpenAPI 3.0 specs",
+    "[API] - Fix - Incorrect 404 response on private resource access (should be 403)",
+    "[API] - Implement - Webhook delivery retry logic with exponential backoff",
+    "[API] - Add - Partial response support via ?fields= query parameter"
+  ],
+  "Frontend": [
+    "[Frontend] - Implement - Optimistic UI updates for task completion toggles",
+    "[Frontend] - Fix - Memory leak in long-lived WebSocket dashboard components",
+    "[Frontend] - Add - Drag-and-drop support for reordering Kanban columns",
+    "[Frontend] - Implement - Skeleton loaders for initial project dashboard state",
+    "[Frontend] - Refactor - Redux state management to TanStack Query for caching",
+    "[Frontend] - Fix - Z-index conflict between modal overlays and tooltips",
+    "[Frontend] - Add - Dark mode support using CSS variables and prefers-color-scheme",
+    "[Frontend] - Implement - Virtualized list for rendering 10,000+ activity log entries"
+  ],
+  "Database": [
+    "[Database] - Implement - Soft delete pattern for Organizations and Projects",
+    "[Database] - Fix - Deadlock occurring during bulk task reassignments",
+    "[Database] - Add - Composite index on (org_id, created_at) for faster reporting",
+    "[Database] - Implement - Database sharding strategy for high-volume enterprise tenants",
+    "[Database] - Refactor - Migration script to convert TEXT IDs to UUID types",
+    "[Database] - Fix - Slow-running aggregate query on team productivity dashboard",
+    "[Database] - Add - Read-replica configuration to offload heavy analytical traffic",
+    "[Database] - Implement - Point-in-time recovery (PITR) testing for production RDS"
+  ],
+  "DevOps": [
+    "[DevOps] - Implement - Blue-Green deployment strategy for zero-downtime releases",
+    "[DevOps] - Fix - Intermittent DNS resolution failures in Kubernetes pod network",
+    "[DevOps] - Add - Prometheus alerts for high 5xx error rates on API gateway",
+    "[DevOps] - Implement - Terraform scripts for auto-scaling group (ASG) policies",
+    "[DevOps] - Refactor - Dockerfile to use multi-stage builds for smaller images",
+    "[DevOps] - Fix - Secret leakage in CI/CD pipeline logs",
+    "[DevOps] - Add - CloudFront CDN distribution for global asset delivery",
+    "[DevOps] - Implement - Canary releases for testing new Billing logic on 5% of traffic",
+    "[DevOps] - Refactor - Centralized logging using ELK stack (Elasticsearch, Logstash, Kibana)",
+    "[DevOps] - Fix - Misconfigured S3 bucket permissions for user-uploaded avatars"
+  ]
+}
